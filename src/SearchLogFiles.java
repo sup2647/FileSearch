@@ -12,8 +12,8 @@ public class SearchLogFiles {
 	  if(f != null){
 		  File[] files = f.listFiles();
 		  if(files==null) return;
-		 for(File f1 : files){			 
-			 if(f1.isFile() && f1.getName().endsWith(".log") && f1.getName().startsWith("c")){
+		 for(File f1 : files){
+			 if(f1.getName().endsWith(".log") ){
 				 System.out.println(f1);
 				 }
 			 if(f1.isDirectory()){
